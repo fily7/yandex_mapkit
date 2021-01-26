@@ -269,6 +269,7 @@ class YandexMapController extends ChangeNotifier {
 
     if (placemark != null && placemark.onTap != null) {
       // placemark.onTap(point);
+      print('Placemark taped: $placemark');
       placemark.onTap(placemark.point);
     }
   }
