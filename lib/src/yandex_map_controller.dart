@@ -227,6 +227,8 @@ class YandexMapController extends ChangeNotifier {
   }
 
   Future<void> _handleMethodCall(MethodCall call) async {
+    print('MethodCall: $call');
+    print('MethodCall.arguments: ${call.arguments}');
     switch (call.method) {
       case 'onMapTap':
         _onMapTap(call.arguments);
