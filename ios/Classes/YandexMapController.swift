@@ -555,7 +555,7 @@ public class YandexMapController: NSObject, FlutterPlatformView {
       ]
       methodChannel.invokeMethod("onMapObjectTap", arguments: arguments)
 
-      return false
+      return true
     }
   }
 
